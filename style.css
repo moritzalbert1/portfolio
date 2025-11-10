@@ -1,0 +1,11 @@
+body{margin:0;font-family:'Poppins',sans-serif;background:#495fba;color:#fff;}
+.hero{display:flex;justify-content:center;align-items:center;height:100vh;text-align:center;flex-direction:column;}
+.hero h1{font-size:4rem;margin:0;font-weight:700;}
+.scroll-hint{font-size:1rem;font-weight:300;margin-top:1rem;color:#fdffe6;animation:bounce 2s infinite;}
+@keyframes bounce{0%,20%,50%,80%,100%{transform:translateY(0);}40%{transform:translateY(10px);}60%{transform:translateY(5px);}}
+.projects{display:flex;flex-direction:column;gap:4rem;padding:2rem;}
+.project-card{width:100%;max-width:400px;margin:auto;text-decoration:none;color:#fff;border:2px solid #fdffe6;border-radius:12px;overflow:hidden;transition:all .3s;display:flex;flex-direction:column;}
+.project-card:hover{transform:translateY(-5px);color:#fdffe6;}
+.project-card img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+.project-card h3{text-align:center;margin:1rem 0 0.3rem;}
+.project-card p{text-align:center;margin:0 0 1rem;}
