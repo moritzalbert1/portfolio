@@ -217,26 +217,6 @@ a:focus, button:focus {
     overflow: hidden;
 }
 
-/* Footer */
-.footer {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 40px;
-    padding-bottom: 30px;
-    margin-top: 200px;
-}
-
-.footer a {
-    color: rgba(255,255,255,0.5);
-    font-size: 14px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer a:hover {
-    color: rgba(255,255,255,0.85);
-}
 
 /* Custom Cursor */
 .custom-cursor {
@@ -419,4 +399,71 @@ a:focus, button:focus {
     .gallery {
         grid-template-columns: 1fr;
     }
+}
+
+/* Follow Me Section */
+.follow-section {
+    text-align: center;
+    margin: 120px auto 60px;
+    padding: 0 20px;
+}
+
+.follow-text {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.instagram-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 32px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.instagram-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.instagram-button svg {
+    transition: transform 0.3s ease;
+}
+
+.instagram-button:hover svg {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Footer verbessert */
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 40px;
+    margin-top: 100px;
+}
+
+.footer a {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: rgba(255,255,255,1);
 }
